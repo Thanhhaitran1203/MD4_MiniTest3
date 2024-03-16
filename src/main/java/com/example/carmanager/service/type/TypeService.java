@@ -30,6 +30,6 @@ public class TypeService implements ITypeService<Type>{
 
     @Override
     public void remove(Long id) {
-        iTypeRepository.deleteById(id);
+        iTypeRepository.deleteTypeById(id);
     }
 }
