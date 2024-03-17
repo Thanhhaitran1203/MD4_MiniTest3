@@ -1,7 +1,6 @@
 package com.example.carmanager.service.type;
 
-import com.example.carmanager.model.Type;
-import com.example.carmanager.repo.ICarRepository;
+import com.example.carmanager.model.product.Type;
 import com.example.carmanager.repo.ITypeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

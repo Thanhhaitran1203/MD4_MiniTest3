@@ -1,6 +1,6 @@
 package com.example.carmanager.service.car;
 
-import com.example.carmanager.model.Car;
+import com.example.carmanager.model.product.Car;
 import com.example.carmanager.repo.ICarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

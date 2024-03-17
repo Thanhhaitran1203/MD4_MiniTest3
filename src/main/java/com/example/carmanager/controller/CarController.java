@@ -1,10 +1,11 @@
 package com.example.carmanager.controller;
 
-import com.example.carmanager.model.Car;
-import com.example.carmanager.model.Type;
-import com.example.carmanager.service.car.CarService;
+import com.example.carmanager.model.product.Car;
+import com.example.carmanager.model.product.Type;
+import com.example.carmanager.model.user.Role;
 import com.example.carmanager.service.car.ICarService;
 import com.example.carmanager.service.type.ITypeService;
+import com.example.carmanager.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -20,11 +21,14 @@ public class CarController {
     @Autowired
     private ICarService carService;
     @Autowired
+    private IUserService userService;
+    @Autowired
     ITypeService typeService;
     @ModelAttribute("types")
     public Page<Type> listType(Pageable pageable){
         return typeService.findAll(pageable);
     }
+    @ModelAttribute("roles")
     @GetMapping("")
     public ModelAndView showList(Pageable pageable){
         ModelAndView modelAndView = new ModelAndView("car/index");

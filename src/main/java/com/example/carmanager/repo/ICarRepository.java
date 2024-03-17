@@ -1,6 +1,6 @@
 package com.example.carmanager.repo;
 
-import com.example.carmanager.model.Car;
+import com.example.carmanager.model.product.Car;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;

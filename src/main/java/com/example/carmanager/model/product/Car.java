@@ -1,4 +1,4 @@
-package com.example.carmanager.model;
+package com.example.carmanager.model.product;
 
 import jakarta.persistence.*;
 
